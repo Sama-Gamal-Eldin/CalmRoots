@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary</title>
+    <link rel="stylesheet" href="../style/Parent.css">
+    <link rel="stylesheet" href="../style/diary.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <img class="logo" src="../logo.jpg">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="mental_health_problems.html">Mental Health Problems</a>
+            <a href="questions.html">Mental Health Test</a>
+            <a href="diary.html">Diary</a>
+            <a href="resources.html">Resources</a>
+            <a href="https://www.therapyroute.com/" target="_blank">Therapists</a>
+            <a href="https://chatgpt.com/" target="_blank">AI Chat</a>
+            <a id="review">Review</a>
+        </div>
+    </div>
+
+    <div class="alert">
+        <span class="closebtn">&times;</span>
+        <div id="thanks">Thank you for your review.</div>
+        <div class="flexr">
+            <div class="flexc">
+                <div class="emotionCards flexc anger">
+                    <img src="../images/anger.jpg">
+                </div>
+                <div class="alert-text">Very Unsatisfied</div>
+            </div>
+            <div class="flexc">
+                <div class="emotionCards flexc sad">
+                    <img src="../images/sadness.jpg">
+                </div>
+                <div class="alert-text">Unsatisfied</div>
+            </div>
+            <div class="flexc">
+                <div class="emotionCards flexc fear">
+                    <img src="../images/fear.jpg">
+                </div>
+                <div class="alert-text">Normal</div>
+            </div>
+            <div class="flexc">
+                <div class="emotionCards flexc joy">
+                    <img src="../images/joy.jpg">
+                </div>
+                <div class="alert-text">Satisfied</div>
+            </div>
+            <div class="flexc">
+                <div class="emotionCards flexc env">
+                    <img src="../images/envy2.jpg">
+                </div>
+                <div class="alert-text">Very Satisfied</div>
+            </div>
+        </div>
+    </div>
+
+    <h1><span class="title">Diary</span></h1>
+
+    <textarea
+        placeholder="Write your inner thoughts anywhere and anytime without the fear of being exposed..."></textarea>
+
+    <button>Save</button>
+    <div id="diary_text"></div>
+    <script src="../script/script.js"></script>
+    <script src="../script/diary.js"></script>
+</body>
+
+</html>

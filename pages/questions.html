@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Test</title>
+    <link rel="stylesheet" href="../style/Parent.css">
+    <link rel="stylesheet" href="../style/questions.css">
+</head>
+
+<body>
+
+    <div class="topnav">
+        <img class="logo" src="../logo.jpg">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="mental_health_problems.html">Mental Health Problems</a>
+            <a href="questions.html">Mental Health Test</a>
+            <a href="diary.html">Diary</a>
+            <a href="resources.html">Resources</a>
+            <a href="https://www.therapyroute.com/" target="_blank">Therapists</a>
+            <a href="https://chatgpt.com/" target="_blank">AI Chat</a>
+            <a id="review">Review</a>
+        </div>
+    </div>
+
+    <div class="alert">
+        <span class="closebtn">&times;</span>
+        <div id="thanks">Thank you for your review.</div>
+        <div class="flexr">
+            <div class="flexc">
+                <div class="emotionCards flexc anger">
+                    <img src="../images/anger.jpg">
+                </div>
+                <div class="alert-text">Very Unsatisfied</div>
+            </div>
+            <div class="flexc">
+                <div class="emotionCards flexc sad">
+                    <img src="../images/sadness.jpg">
+                </div>
+                <div class="alert-text">Unsatisfied</div>
+            </div>
+            <div class="flexc">
+                <div class="emotionCards flexc fear">
+                    <img src="../images/fear.jpg">
+                </div>
+                <div class="alert-text">Normal</div>
+            </div>
+            <div class="flexc">
+                <div class="emotionCards flexc joy">
+                    <img src="../images/joy.jpg">
+                </div>
+                <div class="alert-text">Satisfied</div>
+            </div>
+            <div class="flexc">
+                <div class="emotionCards flexc env">
+                    <img src="../images/envy2.jpg">
+                </div>
+                <div class="alert-text">Very Satisfied</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexc">
+        <h1 class="title">Mental Health Test</h1>
+
+        <div class="Maincontainer">
+            <div class="questions flexc">
+                <div class="sep">
+                    <label class="label_age">Choose your age</label>
+                    <select name="age" id="age">
+                    </select>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you felt down, depressed, or hopeless in the past two weeks?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="TimeFeltDown" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Several days
+                        <input type="radio" name="TimeFeltDown" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+
+
+                    <label class="container">More than half the days
+                        <input type="radio" name="TimeFeltDown" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="TimeFeltDown" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>
+                        How often have you had little interest or pleasure in doing things you usually enjoy in the
+                        past
+                        two weeks?
+                    </label>
+                    <label class="container">Not at all
+                        <input type="radio" name="PleasureInThings" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="PleasureInThings" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="PleasureInThings" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="PleasureInThings" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you felt nervous, anxious, or on edge in the past month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="FeltAnxious" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="FeltAnxious" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="FeltAnxious" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="FeltAnxious" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you been unable to control or stop worrying in the past month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="ControlWorry" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="ControlWorry" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="ControlWorry" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="ControlWorry" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you felt overwhelmed by your responsibilities in the past month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="overwhelmed" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="overwhelmed" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="overwhelmed" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="overwhelmed" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+
+                    <label>How often have you felt tired or had little energy in the past month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="radio5" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="radio5" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="radio5" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="radio5" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+
+                    <label>How often have you felt bad about yourself or that you are a failure or have let yourself
+                        or
+                        your
+                        family down in the past month?
+                    </label>
+                    <label class="container">Not at all
+                        <input type="radio" name="radio6" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="radio6" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="radio6" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="radio6" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you had trouble concentrating on things, such as reading the newspaper or
+                        watching
+                        television, in the past month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="radio7" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="radio7" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="radio7" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="radio7" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you been moving or speaking so slowly that other people could have
+                        noticed, or
+                        the
+                        opposite—being so fidgety or restless that you have been moving a lot more than usual in the
+                        past
+                        month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="radio8" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="radio8" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="radio8" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="radio8" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>Have you experienced any thoughts of self-harm or suicide in the past month?</label>
+                    <label class="container">Never
+                        <input type="radio" name="radio9" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Rarely
+                        <input type="radio" name="radio9" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sometimes
+                        <input type="radio" name="radio9" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Always
+                        <input type="radio" name="radio9" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you found it difficult to maintain relationships with friends, family, or
+                        coworkers in
+                        the past month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="radio10" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="radio10" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="radio10" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="radio10" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you found it hard to go to work or perform daily activities in the past
+                        month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="radio11" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="radio11" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="radio11" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="radio11" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you felt that your mental health is negatively impacting your physical
+                        health
+                        in
+                        the
+                        past month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="radio12" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="radio12" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="radio12" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="radio12" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you felt that you need help or support with your mental health in the past
+                        month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="radio13" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="radio13" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="radio13" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="radio13" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sep">
+                    <label>How often have you felt disconnected or isolated from others in the past month?</label>
+                    <label class="container">Not at all
+                        <input type="radio" name="radio14" class="num1" data-value="0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Several days
+                        <input type="radio" name="radio14" class="num2" data-value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">More than half the days
+                        <input type="radio" name="radio14" class="num3" data-value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Nearly every day
+                        <input type="radio" name="radio14" class="num4" data-value="3">
+                        <span class="checkmark"></span>
+                    </label>
+
+                </div>
+
+                <button id="submit">Submit</button>
+
+                <div id="result"></div>
+
+            </div>
+        </div>
+        <script src="../script/script.js"></script>
+        <script src="../script/questions.js"></script>
+</body>
+
+</html>
