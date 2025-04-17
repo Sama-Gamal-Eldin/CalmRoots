@@ -1,0 +1,32 @@
+.p {
+    width: 50%;
+    margin: auto;
+    font-size: 24px;
+    padding: 10px;
+    color: #1f628d;
+}
+
+blockquote {
+    font-size: 28px;
+    font-style: italic;
+    display: inline;
+    color: #1f628d;
+}
+
+/* the author's name */
+.normal_p {
+    font-size: 22px;
+}
+
+.button {
+    background-color: #1f628d;
+    border: solid #1f628d 2px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}

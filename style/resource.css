@@ -1,0 +1,13 @@
+a {
+    color: white;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #74d383;
+}
+
+.resource {
+    gap: 30px;
+    width: fit-content;
+}

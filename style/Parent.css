@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1ecf0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #1f628d;
+    padding: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topnav a {
+    cursor: pointer;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #ACE692;
+}
+
+.topnav img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.flexr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emotionCards {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+}
+
+.emotionCards img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.sad {
+    padding-top: 30px;
+}
+
+.fear {
+    padding-top: 10px;
+}
+
+.env {
+    padding-bottom: 100px;
+}
+
+.env img {
+    width: 180px;
+}
+
+.alert-text {
+    font-size: 20px;
+}
+
+
+.alert {
+    display: none;
+    background-color: #ffffff;
+    color: #1f628d;
+    width: 55%;
+    border: 2px solid #1f628d;
+    border-radius: 4px;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.title {
+    color: white;
+    background-color: #1f628d;
+    border: 2px solid #1f628d;
+    border-radius: 8px;
+    padding: 8px;
+    width: fit-content;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.closebtn {
+    color: #1f628d;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+#thanks {
+    display: none;
+}
+
+.cont {
+    width: 70%;
+    padding: 40px;
+    background-color: #1f628d;
+    color: white;
+    border-radius: 15px;
+}
